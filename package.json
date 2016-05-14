@@ -1,0 +1,20 @@
+{
+  "name": "Tanks",
+  "version": "0.0.1",
+  "description" : "Multiplayer 2D tank combat game in NodeJS where players answer short questions to gain control of their tank. Completed for COMP 2406, Fall 2016.",
+  "author": {
+    "name": "Samuel Rodrigue",
+    "email": "Sam.Rodrigue@carleton.ca"
+  },
+  "repository": "https://github.com/SamRodrigue/tank-gamejs.git",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "ecstatic": "~0.5.4",
+    "sanitizer": "~0.1.2",
+    "ws": "~0.4.32"
+  }
+}

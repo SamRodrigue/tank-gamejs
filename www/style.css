@@ -1,0 +1,151 @@
+body {
+   font-family: 'Arial';
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#content {
+   width:775px;
+   margin-top: 10px;
+   margin-left:auto;
+   margin-right: auto;
+   text-align: left;
+}
+#scene {
+   border: solid #434E06;
+   width: 775px;
+   height: 400px;
+}
+#chat {
+   border: solid #434E06;
+   width: 775px;
+}
+#messages {
+   height: 120px;
+   background-color: #E8F896;
+   overflow-y: scroll;
+}
+#msgBox {
+   width: 710px;
+}
+#msgButton {
+   width: 58px;
+   float:right;
+}
+.wrap {
+   white-space: pre-wrap;
+   white-space: -moz-pre-wrap;
+   white-space: -pre-wrap;
+   white-space: -o-pre-wrap;
+   word-wrap: break-word;
+}
+#welcome_overlay {
+   background: rgba(194, 212, 100, 0.5);
+   position:absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 9;
+}
+#welcome {
+   border: solid #434E06;
+   background-color: #E8F896;
+   margin-top: 45px;
+   margin-left: auto;
+   margin-right: auto;
+   width: 275px;
+   padding: 10px;
+   z-index: 10;
+}
+#welcome_title {
+   font-size: 200%;
+}
+#welcome_message {
+   font-weight: bold;
+   margin: 5px;
+}
+#userName {
+   margin: 5px;
+}
+#welcome_status {
+   margin: 10px;
+}
+#status {
+   position:absolute;
+   top: 44px;
+   width: 781px;
+   height: 131px;
+   margin-left: auto;
+   margin-right: auto;
+}
+#red_status {
+   float:left;
+   width: 363px;
+   height: 100px;
+}
+#red_status_message {
+   font-size: 200%;
+   margin: 10px;
+}
+#blue_status {
+   float:right;
+   width: 363px;
+   height: 100px;
+}
+#blue_status_message {
+   font-size: 200%;
+   margin: 10px;
+}
+#questions {
+   width: 781px;
+   height: 171px;
+}
+#red_quest {
+   position: relative;
+   top: 0;
+   left: 0;
+   overflow: hidden;
+   border: solid #090424;
+   background: #FFE9E6;
+   width: 382px;
+   height: 160px;
+}
+#red_quest_title {
+   font-size: 125%;
+   margin-bottom: 5px;
+}
+#red_guess {
+   width: 382px;
+}
+#red_quest_guess {
+   width: 317px;
+}
+#red_quest_input {
+   float: right;
+   width: 58px;
+}
+#blue_quest {
+   position: relative;
+   top: -166px;
+   left: 393px;
+   overflow: hidden;
+   border: solid #090424;
+   background: #E8E7F1;
+   width: 382px;
+   height: 160px;
+}
+#blue_quest_title {
+   font-size: 125%;
+   margin-bottom: 5px;
+}
+#blue_guess {
+   width: 382px;
+}
+#blue_quest_guess {
+   width: 317px;
+}
+#blue_quest_input {
+   float: right;
+   width: 58px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <link rel='stylesheet' type='text/css' href='style.css'>
+   <script src='jquery-1.11.3.min.js'></script>
+   <script src='client.js'></script>
+   <script src='canvas.js'></script>
+</head>
+
+<body>
+<div id='content'>
+   <canvas id='scene'>Canvas not supported</canvas>
+   <div id='questions'>
+      <div id='red_quest'>
+         <div id='red_quest_title'><center>Question for Red Control</center></div>
+         <div id='red_quest_message'></div>
+         <div id='red_guess'>
+            <input type='text' placeholder='Answer?' id='red_quest_guess' maxlength='32'>
+            <input type='button' onclick='sendGuessRed()' id='red_quest_input' value='Send'>
+         </div>
+         <div id='red_quest_status'></div>
+      </div>
+      <div id='blue_quest'>
+         <div id='blue_quest_title'><center>Question for Blue Control</center></div>
+         <div id='blue_quest_message'></div>
+         <div id='blue_guess'>
+            <input type='text' placeholder='Answer?' id='blue_quest_guess' maxLength='32'>
+            <input type='button' onclick='sendGuessBlue()' id='blue_quest_input' value='Send'>
+         </div>
+         <div id='blue_quest_status'></div>
+      </div>
+   </div>
+   <div id='chat'>
+      <div id='messages'></div>
+      <input type='text' placeholder='Send a message' id='msgBox' onkeypress='return handleKeyPress(event)' maxlength='250'>
+      <input type='button' onclick='sendMessage()' id='msgButton' value='Send'>
+   </div>
+   <!-- Popup message for welcome message -->
+   <div id='welcome_overlay'>
+      <div id='welcome'>
+         <div id='welcome_title'><center>Welcome</center></div>
+         <div id='welcome_message'></div>
+         <div id='welcome_message2'><center>Destroy the enemy tank and avoid oncoming enemy fire. To control the tank, be the first to correctly answer the team question. You will be in control for 10s or until you fire your cannon.</center></div>
+         <!--<div id='welcome_status'></div>-->
+         <center><input type='text' placeholder='User Name' id='userName' onkeypress='return welcomeHandleKeyPress(event)' maxlength='25' autofocus></center>
+         <div id='welcome_image'><center><img src='image/controls.png'></center></div>
+      </div>
+   </div>
+   <div id='status'>
+      <div id='red_status'>
+         <center id='red_status_message'></center>
+      </div>
+      <div id='blue_status'>
+         <center id='blue_status_message'></center>
+      </div>
+   </div>
+</div>
+<div>
+   <!-- Alternate controls using buttons
+   <button onclick='handleKeyDown({which:37});handleKeyUp({which:37});'>Left</button>
+   <button onclick='handleKeyDown({which:39});handleKeyUp({which:39});'>Right</button>
+   <button onclick='handleKeyDown({which:32});handleKeyUp({which:32});'>Fire</button>
+   <button onclick='handleKeyDown({which:38});handleKeyUp({which:38});'>Up</button>
+   <button onclick='handleKeyDown({which:40});handleKeyUp({which:40});'>Down</button>-->
+</div>
+</body>
+
+</html>
